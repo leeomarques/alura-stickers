@@ -2,7 +2,7 @@
 
 - [x] Aula 1:
 
-Retornar dados da API com os 250 melhores filmes.
+Retornar dados da API com os 250 melhores filmes, tratar as informações e personalizar a saída no terminal.
  
  Resultado:
  
