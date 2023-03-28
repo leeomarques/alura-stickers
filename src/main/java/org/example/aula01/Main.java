@@ -46,7 +46,6 @@ public class Main {
 			System.out.println(BLACK_BACKGROUND + RED_BOLD + "Rating: " + rating + " " + star + RESET);
 
 			System.out.println();
-			
 
 		}
 	}
