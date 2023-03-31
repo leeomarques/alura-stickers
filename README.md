@@ -9,3 +9,13 @@ Retornar dados da API com os 250 melhores filmes, tratar as informações e pers
 <p align="center">
   <img src="https://github.com/leeomarques/alura-stickers/blob/master/Captura%20de%20tela%20de%202023-03-28%2001-26-23.png"/>
 </p>
+
+- [x] Aula 2:
+
+AULA 02 - GERANDO FIGURINHAS PARA WHATSAPP
+ 
+ Resultado:
+ 
+<p align="center">
+  <img src="https://github.com/leeomarques/alura-stickers/blob/master/image.png"/>
+</p>
