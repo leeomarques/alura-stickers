@@ -1,4 +1,4 @@
-package org.example.aula01;
+package org.example.alura;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

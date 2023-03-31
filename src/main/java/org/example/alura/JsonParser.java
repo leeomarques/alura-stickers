@@ -1,4 +1,4 @@
-package org.example.aula01;
+package org.example.alura;
 
 import java.util.ArrayList;
 import java.util.HashMap;
