@@ -73,10 +73,5 @@ public class GeradoraDeFigurinhas {
 
     }
 
-//    public static void main(String[] args) throws Exception {
-//        var geradora = new GeradoraDeFigurinhas();
-//        geradora.cria();
-//    }
-
 }
 

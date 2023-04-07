@@ -1,43 +1,46 @@
 package org.example.alura;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class JsonParser {
 
-	private static final Pattern REGEX_ITEMS = Pattern.compile(".*\\[(.+)\\].*");
-	private static final Pattern REGEX_ATRIBUTOS_JSON = Pattern.compile("\"(.+?)\":\"(.*?)\"");
+    // This Regex Capture a sequence of Character that are in a bracket
+    private static final Pattern REGEX_ITEMS = Pattern.compile(".*\\[(.+)\\].*");
 
-	public List<Map<String, String>> parse(String json) {
-		Matcher matcher = REGEX_ITEMS.matcher(json);
-		if (!matcher.find()) {
+    // This Regex transforms a sequence of String in JSON
+    private static final Pattern REGEX_CHARACTER_JSON = Pattern.compile("\"(.+?)\":\"(.*?)\"");
 
-			throw new IllegalArgumentException("Não encontrou items.");
-		}
+    public List<Map<String, String>> parse(String json) {
 
-		String[] items = matcher.group(1).split("\\},\\{");
+        Matcher matcher = REGEX_ITEMS.matcher(json); // Create Matcher
 
-		List<Map<String, String>> dados = new ArrayList<>();
+        // Verify if list is null
+        if (!matcher.find()) {
+            throw new IllegalArgumentException("Not Find Itens");
+        }
 
-		for (String item : items) {
+        String[] items = matcher.group(1).split("\\},\\{");
 
-			Map<String, String> atributosItem = new HashMap<>();
 
-			Matcher matcherAtributosJson = REGEX_ATRIBUTOS_JSON.matcher(item);
-			while (matcherAtributosJson.find()) {
-				String atributo = matcherAtributosJson.group(1);
-				String valor = matcherAtributosJson.group(2);
-				atributosItem.put(atributo, valor);
-			}
+        // Create a Stream of the map of the ApiReader body to create a new list of titles, images, and Rating this ApiReader
 
-			dados.add(atributosItem);
-		}
+        List<Map<String, String>> parseBody = Arrays.stream(items)
+                .map(item -> {
+                    Map<String, String> characterItem = new HashMap<>();
+                    Matcher matcherCharacterJson = REGEX_CHARACTER_JSON.matcher(item);
+                    while (matcherCharacterJson.find()) {
+                        String character = matcherCharacterJson.group(1);
+                        String value = matcherCharacterJson.group(2);
+                        characterItem.put(character, value);
+                    }
+                    return characterItem;
+                })
+                .collect(Collectors.toList());
 
-		return dados;
-	}
 
+        return parseBody;
+    }
 }
