@@ -28,3 +28,12 @@ AULA 03 - LIGANDO AS PONTAS, REFATORAÇÃO E ORIENTAÇÃO A OBJETOS
  
 Ajustes e refatorações realizadas com os desafios
 
+- [x] Aula 4:
+
+AULA 04 - CRIANDO NOSSA PRÓPRIA API COM SPRING
+ 
+ Resultado:
+ 
+API criada segue link do repositório abaixo:
+
+https://github.com/leeomarques/linguagens-api
