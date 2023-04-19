@@ -19,3 +19,12 @@ AULA 02 - GERANDO FIGURINHAS PARA WHATSAPP
 <p align="center">
   <img src="https://github.com/leeomarques/alura-stickers/blob/master/image.png"/>
 </p>
+
+- [x] Aula 3:
+
+AULA 03 - LIGANDO AS PONTAS, REFATORAÇÃO E ORIENTAÇÃO A OBJETOS
+ 
+ Resultado:
+ 
+Ajustes e refatorações realizadas com os desafios
+
