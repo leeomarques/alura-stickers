@@ -37,3 +37,27 @@ AULA 04 - CRIANDO NOSSA PRÓPRIA API COM SPRING
 API criada segue link do repositório abaixo:
 
 https://github.com/leeomarques/linguagens-api
+
+
+- [x] Aula 5:
+
+AULA 05 - PUBLICANDO NOSSA API NO CLOUD
+ 
+ Resultado:
+ 
+<p align="left">
+  <img src="https://seeklogo.com/images/F/fly-io-logo-8FBFA92BAF-seeklogo.com.png"/>
+</p>
+
+Deploy realizado no Fly.io - https://fly.io/<br>
+Deploy: https://alura-linguagens-leeomarques.fly.dev/linguagens
+<br>
+
+<p align="left">
+  <img src="https://www.mundodocker.com.br/wp-content/uploads/2015/06/docker_facebook_share.png"/>
+</p>
+Imagem criada no Docker:https://hub.docker.com/<br>
+Link: https://hub.docker.com/repository/docker/leomarques/linguagensapi/general
+
+
+
